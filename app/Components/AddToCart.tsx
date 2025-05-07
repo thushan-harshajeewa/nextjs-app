@@ -3,20 +3,22 @@ import React from 'react';
 
 const AddToCart = () => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-200 shadow-xl">
       <figure>
-        <Image
+        <img
+          width={100}
+          height={100}
           src="https://via.placeholder.com/150"
           alt="Product"
           className="w-full h-48 object-cover"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Product Name</h2>
-        <p className="text-gray-500">This is a short description of the product.</p>
+        <h2 className="card-title text-base-content">Product Name</h2>
+        <p className=" text-base-content">This is a short description of the product.</p>
         <div className="card-actions justify-between items-center">
-          <span className="text-lg font-bold">$99.99</span>
-          <button className="btn btn-primary">Add to Cart</button>
+          <span className="text-lg font-bold text-base-content">$99.99</span>
+          <button className="btn btn-accent">Add to Cart</button>
         </div>
         <h1 className="badge badge-primary mt-2">3</h1>
       </div>

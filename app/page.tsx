@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 import AddToCart from "./Components/AddToCart";
 
@@ -16,8 +17,11 @@ export default function Home() {
        
       </div>
       <br />
-      {/* <h1>this is chakra ui card</h1>
-      <AddToCartChakraUi/> */}
+      <h1>hhh</h1>
+      <div className="w-96 h-96 bg-primary flex items-center justify-center">
+
+      </div>
+      
     </main>
   );
 }
