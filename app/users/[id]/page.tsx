@@ -1,11 +1,12 @@
 import React from 'react'
 
 interface UserDetailsPageProps {
-    params: {
+    params: Promise<{
         id: number
-    }
+    }>
 }
-const UserDetailsPage = ({params:{id}}:UserDetailsPageProps) => {
+const UserDetailsPage = async ({params}:UserDetailsPageProps) => {
+  const {id}=await params
   return (
     <div>UserDetailsPage {id}</div>
   )

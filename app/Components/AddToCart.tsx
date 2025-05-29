@@ -5,7 +5,7 @@ const AddToCart = () => {
   return (
     <div className="card w-96 bg-base-200 shadow-xl">
       <figure>
-        <img
+        <Image
           width={100}
           height={100}
           src="https://via.placeholder.com/150"

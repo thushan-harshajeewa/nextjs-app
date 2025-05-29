@@ -1,13 +1,14 @@
 import React from 'react'
 
 interface props{
-    params:{
+    params:Promise<{
         id:number
         
-    }
+    }>
 }
 
-const UserPhotos = ({params:{id}}:props) => {
+const UserPhotos = async ({params}:props) => {
+  const {id}=await params
   return (
     <div>User {id} photo list </div>
   )
